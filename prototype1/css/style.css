@@ -7,8 +7,30 @@ body {
 	margin: 0px;
 }
 
-.row {
+div.row {
 	width:100%;
-	border:3 px solid black;
 }
 
+div.column {
+	height: 200px;
+	margin: 5%;
+	border:1px solid black;
+}
+
+@media(min-width: 992px) {
+	.col-lg-4 {
+		width: 33%;
+		float: left;
+		border:2px solid black;
+	}
+
+}
+
+@media(max-width: 991px)
+{
+	.col-md-6 {
+		width: 50%;
+		float: left;
+		border:2px solid black;
+	}
+}
