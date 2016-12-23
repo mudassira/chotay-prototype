@@ -1,11 +1,91 @@
 <!DOCTYPE html5>
 <html>
 <head>
-	<title>Chotay</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chotay</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>
+<header>
+    <nav id="header-nav" class="navbar navbar-default navbar-static-top">
+      <div class="container-float" id="header-container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left">
+          	<div id="logo-img" alt="Logo image"></div>
+          </a>
+          <div class="navbar-brand hidden-xs">
+            <a href="index.html" >
+              <h1>Always there for you!</h1>
+            </a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" 
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class=icon-bar></span>
+            <span class=icon-bar></span>
+            <span class=icon-bar></span>
+          </button>
+
+        </div>
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right" >
+            <li>
+              <a href="#"><span class="hidden-md hidden-sm">Become a food supplier</span>
+              	<button type="button" class="btn btn-default" aria-label="Left Align">
+  					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</button>
+              </a>
+            </li>
+            <li>
+              <a href="#"><span class="hidden-md hidden-sm">Become a chef</span>
+              	<button type="button" class="btn btn-default" aria-label="Left Align">
+  					<span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+				</button>
+              </a>
+            </li>
+            <li>
+              <a href="#"><span class="hidden-md hidden-sm">Become a helper</span>
+              	<button type="button" class="btn btn-default" aria-label="Left Align">
+  					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				</button>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>  
+    </nav>
+  </header>
+ <div id="empty-space">
+ </div>
+ <div id="main-content" class="container">
+	<div id="home-tiles" class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="#"><div id="homefood_tile">
+				<span>Order Home Food</span>
+			</div></a>
+		</div>
+
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="#"><div id="hirechef_tile">
+				<span>Hire a Chef</span>
+			</div></a>
+		</div>
+
+		<div class="col-md-4 col-sm-12 col-xs-12">
+			<a href="#"><div id="getcleaning_tile">
+				<span>Get Cleaning Help</span>
+			</div></a>
+		</div>
+
+
+	</div>
+ </div>
+ <!-- <h1> 
 Chotay are here to help you! What are you looking for today?
 </h1>
 <div class="row">
@@ -19,5 +99,36 @@ Chotay are here to help you! What are you looking for today?
 		<div class="column">Onsite Cooking</div>
 	</div>
 </div>
+
+
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+<footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="bottom-menu" class="col-sm-4">
+          <a href="#">Money Back Gaurantee</a><br>
+          <a href="#">How it works</a><br>
+          <a href="#">Careers</a><br>
+          <a href="#">Press</a><br>
+          <a href="#">Contact Us</a><br>
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <div id="getapps"></div>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The cleaner was so good. She arrived on time and took care of everything!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll use chotay to order home food again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Chotay.com 2016</div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

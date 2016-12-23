@@ -1,0 +1,129 @@
+
+/*HEADER*/
+
+#logo-img {
+	background: url('../images/chotay_logo1.jpg') no-repeat;
+	width: 320px;
+	height: 70px;
+	margin: 0px 0px 0px 0px;
+
+}
+
+#header-nav {
+	/*height: 100px;*/
+	background-color: #ffffff;
+	border:0px;
+}
+
+
+.navbar-brand h1 {
+	font-size: 1.3em;
+	font-style: italic;
+	margin-top: 25px;
+}
+
+.navbar-brand  a{
+	text-decoration: none;
+}
+
+.navbar-nav li a {
+ line-height: 40px;
+ margin-top: 20px;
+}
+
+.navbar-toggle {
+
+	margin-top: 20px;
+
+}
+
+/*HOME PAGE*/
+
+#homefood_tile, #hirechef_tile, #getcleaning_tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #4F8CC5;
+	overflow: hidden;
+}
+
+#homefood_tile:hover, #hirechef_tile:hover, #getcleaning_tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#homefood_tile {
+	background: url('../images/homefood.jpg') no-repeat;
+	background-position: center;
+}
+
+#hirechef_tile {
+	background: url('../images/hirechef.jpg') no-repeat;
+	background-position: center;
+}
+
+#getcleaning_tile {
+	background: url('../images/getcleaning.jpg') no-repeat;
+	background-position: center;
+}
+
+#homefood_tile span, #hirechef_tile span, #getcleaning_tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+
+#empty-space {
+	height: 100px;
+}
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  /*background-color: #4F8CC5;*/
+  background-color: #CCCCCC;
+  border-top: 0;
+  color: #4F8CC5;
+}
+.panel-footer a{
+	text-decoration: none;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#bottom-menu, #address {
+  line-height: 2;
+}
+#bottom-menu > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+
+#getapps {
+	
+	background: url('../images/Get-Apps.jpg') no-repeat;
+	width: 175px;
+	height: 150px;
+	background-position: center;
+	margin: 0 auto;
+}
+/* END FOOTER */
