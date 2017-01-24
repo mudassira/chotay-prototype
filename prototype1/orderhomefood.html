@@ -1,0 +1,197 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chotay</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <nav id="header-nav" class="navbar navbar-default navbar-static-top">
+      <div class="container-float" id="header-container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left">
+          	<div id="logo-img" alt="Logo image"></div>
+          </a>
+          <div class="navbar-brand hidden-xs">
+            <a href="index.html" >
+              <h1>Always there for you!</h1>
+            </a>
+          </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false" 
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class=icon-bar></span>
+            <span class=icon-bar></span>
+            <span class=icon-bar></span>
+          </button>
+
+        </div>
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right" >
+            <li>
+              <a href="#"><span class="hidden-md hidden-sm">Become a food supplier</span>
+              	<button type="button" class="btn btn-default" aria-label="Left Align">
+  					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</button>
+              </a>
+            </li>
+            <li>
+              <a href="#"><span class="hidden-md hidden-sm">Become a chef</span>
+              	<button type="button" class="btn btn-default" aria-label="Left Align">
+  					<span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+				</button>
+              </a>
+            </li>
+            <li>
+              <a href="#"><span class="hidden-md hidden-sm">Become a helper</span>
+              	<button type="button" class="btn btn-default" aria-label="Left Align">
+  					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				</button>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>  
+    </nav>
+  </header>
+ </div>
+ <div id="main-content" class="container">
+	<div id="orderhomefood-tiles" class="row">
+    <div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12">
+      <div id="address_tile">
+        <div id="address-text">Enter your address:</div>
+        <div id="city-dropdown-text" class="dropdown">
+           <button class="btn btn-default dropdown-toggle" type="button" id="city-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select City:
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="city-dropdown">
+            <li><a href="#">Karachi</a></li>
+            <li><a href="#">Lahore</a></li>
+            <li><a href="#">Islamabad</a></li>
+          </ul>
+        </div>
+        <div id="area-dropdown-text" class="dropdown">
+           <button class="btn btn-default dropdown-toggle" type="button" id="area-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Select Area:
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="area-dropdown">
+            <li><a href="#">Nazimabad</a></li>
+            <li><a href="#">Clifton</a></li>
+            <li><a href="#">Defence</a></li>
+          </ul>
+        </div>
+        <div id="street-div">
+          <span>Street:</span>
+           <input type="text" class="form-control pull-right" aria-label="Street" id="street-input">
+        </div>
+        <div id="house-div">
+          <span>House:</span>
+           <input type="text" class="form-control pull-right" aria-label="House" id="house-input">
+        </div>
+        <div id="radius-dropdown-text" class="dropdown">
+           <button class="btn btn-default dropdown-toggle" type="button" id="area-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Search within:
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="radius-dropdown">
+            <li><a href="#">5 km</a></li>
+            <li><a href="#">15 km</a></li>
+            <li><a href="#">50 km</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12">
+      <div id="food-preference-tile" style="margin-top: 1.5em">
+        <div id="food-preference-text">Select your food preference:</div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="any" checked="true"> Any
+          </label>
+        </div>
+         <div class="checkbox">
+          <label>
+            <input type="checkbox" id="desi"> Desi
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="biryani"> Biryani
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="nihari"> Nihari
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="paya"> Paya
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="chinese"> Chinese
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="fish"> Fish
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-md-offset-4 col-sm-12 col-xs-12">
+      <div id="button-tile" style="margin-top: 1.5em">
+        <button class="btn btn-default" type="button" id="back-button" aria-haspopup="true" aria-expanded="true">
+            <strong>Back</strong>
+        </button>
+        <button class="btn btn-default" type="button" id="search-button" aria-haspopup="true" aria-expanded="true">
+            <strong>Search</strong>
+        </button>
+      </div>
+    </div>
+
+
+    
+  </div>
+ </div>
+ 
+<footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="bottom-menu" class="col-sm-4">
+          <a href="#">Money Back Gaurantee</a><br>
+          <a href="#">How it works</a><br>
+          <a href="#">Careers</a><br>
+          <a href="#">Press</a><br>
+          <a href="#">Contact Us</a><br>
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <div id="getapps"></div>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The cleaner was so good. She arrived on time and took care of everything!"</p>
+          <p>"Amazing food! Great service! Couldn't ask for more! I'll use chotay to order home food again and again!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Chotay.com 2016</div>
+    </div>
+  </footer>
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
